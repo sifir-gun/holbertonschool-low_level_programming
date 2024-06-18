@@ -2,8 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description:if the number is greater than 0: printf is positive
+ * if the number is 0: printf is zero
+ * if the number is less than 0: printf is negative
+ * Return: 0 on success
+ */
 int main(void)
 {
 	int n;
