@@ -1,7 +1,6 @@
 
 #include "main.h"
-/*
- * File: 0-putchar.c
+/** 
  * main - Entry point for the program.
  *
  * Description: prints _putchar, followed by a new line
