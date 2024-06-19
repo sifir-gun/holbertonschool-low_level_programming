@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 /*
  * main - Entry point
  *
  * Description: Write a program that prints _putchar, followed by a new line.
  * Return: 0 on success
  */
-int main(void)
+int main(void) 
 {
 char c[8] = "_putchar";
 int i;
