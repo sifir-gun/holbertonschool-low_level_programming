@@ -1,7 +1,8 @@
 
 #include "main.h"
 /*
- * main - prints _putchar
+ * File: 0-putchar.c
+ * main - prints _putchar, followed by a new line
  *
  * Description: prints _putchar, followed by a new line
  * Return: 0 on success
