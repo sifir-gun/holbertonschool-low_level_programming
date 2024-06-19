@@ -2,7 +2,7 @@
 #include "main.h"
 /*
  * File: 0-putchar.c
- * main - Entry point
+ * main - Entry point for the program.
  *
  * Description: prints _putchar, followed by a new line
  * Return: 0 on success
