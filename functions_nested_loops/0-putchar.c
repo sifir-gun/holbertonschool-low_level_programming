@@ -3,7 +3,7 @@
 /*
  * main - Entry point
  *
- * Description: Write a program that prints _putchar, followed by a new line.
+ * Description: prints _putchar, followed by a new line
  * Return: 0 on success
  */
 int main(void)
