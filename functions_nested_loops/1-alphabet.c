@@ -9,12 +9,12 @@
 /* Fichier 1-alphabet.c ou un autre fichier source approprié */
 void print_alphabet(void)
 {
-    char c[26] = "abcdefghijklmnopqrstuvwxyz";
-    int i;
+char c[26] = "abcdefghijklmnopqrstuvwxyz";
+int i;
 
-    for (i = 0; i < 26; i++)
-    {
-        _putchar(c[i]);
-    }
-    _putchar('\n');
+for (i = 0; i < 26; i++)
+{
+_putchar(c[i]);
+}
+_putchar('\n');
 }
