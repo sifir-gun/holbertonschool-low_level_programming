@@ -3,8 +3,9 @@
 /**
  * main - check the code
  *
- * Description: prints the numbers from 1 to 100, followed by a new line. Print Fizz instead of the multiples of three and for the multiples of five print Buzz
- * 
+ * Description: prints the numbers from 1 to 100, followed by a new line. 
+ * Print Fizz instead of the multiples of three and for the multiples of five print Buzz
+ *
  *
  * Return: Always 0.
  */
@@ -26,5 +27,5 @@ int main(void)
 			printf(" ");
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
