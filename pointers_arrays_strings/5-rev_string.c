@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rev_string: reverses a string
+ * rev_string: inverse une chaîne de caractères
  * @s: string
  */
 void rev_string(char *s)
