@@ -3,7 +3,8 @@
  * _strlen - Count the number of characters in the sting
  * description: returns the length of a string
  * @s: - pointer to a string
- * return - taille
+ *
+ * Return: taille
  */
 int _strlen(char *s)
 {
