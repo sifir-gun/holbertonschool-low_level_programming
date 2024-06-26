@@ -9,14 +9,14 @@ void rev_string(char *s)
 	char *end = s + _strlen(s) - 1;
 	char temp;
 
-	while(start < end)
+	while (start < end)
 	{
 		temp = *start;
 		*start = *end;
 		*end = temp;
 		start++;
 		end--;
-	} 
+	}
 }
 /**
  * _strlen - Count the number of characters in the sting
