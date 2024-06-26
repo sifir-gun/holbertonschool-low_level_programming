@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rev - imprime une chaîne de caractères à l'envers, suivie d'une nouvelle ligne
+ * print_rev - imprime une chaîne de caractères à l'envers
  * @s: chaîne de caractères à imprimer
  */
 void print_rev(char *s)
