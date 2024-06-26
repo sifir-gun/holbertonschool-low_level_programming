@@ -4,21 +4,17 @@
  * @s: string
  */
 void rev_string(char *s)
-
 {
-	int len = 0;
-	int i;
+	char *start = s;
+	char *end = s + _strlen(s) - 1;
 	char temp;
 
-	while (s[len] != '\0')
+	while(start < end)
 	{
-		len++;
-	}
-
-	for (i = 0 - 1; i < len / 2; i++)
-	{
-		temp = s[i];
-		s[i] = s[len - 1 - i];
-		s[len - 1 - i] = temp;
-	}
+		temp = *start;
+		*start = *end;
+		*end = temp;
+		start++;
+		end--;
+	} 
 }
