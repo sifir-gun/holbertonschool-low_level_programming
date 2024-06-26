@@ -1,7 +1,10 @@
 #include "main.h"
 /**
- * rev_string: inverse une chaîne de caractères
- * @s: string
+ * rev_string - Inverse une chaîne de caractères
+ * @s: Chaîne de caractères à inverser
+ *
+ * Description: Cette fonction prend une chaîne de caractères en entrée
+ * et inverse l'ordre des caractères dans cette chaîne.
  */
 void rev_string(char *s)
 {
