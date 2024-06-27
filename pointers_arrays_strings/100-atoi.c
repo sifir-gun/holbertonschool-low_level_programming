@@ -29,7 +29,6 @@ int _atoi(char *s)
         {
             if (result > (2147483647 - (*s - '0')) / 10)
             {
-                // Overflow detection
                 if (sign == 1)
                     return 2147483647;
                 else
