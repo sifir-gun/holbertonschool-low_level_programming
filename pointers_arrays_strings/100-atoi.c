@@ -2,7 +2,7 @@
 /**
  * _atoi - converts a string to an integer
  * @s: the string to convert
- * 
+ *
  * Return: the integer value of the string
  */
 int _atoi(char *s)
@@ -29,9 +29,9 @@ int _atoi(char *s)
 			if (result > (2147483647 - (*s - '0')) / 10)
 			{
 				if (sign == 1)
-					return 2147483647;
+					return (2147483647);
 				else
-					return -2147483648;
+					return (-2147483648);
 			}
 			started = 1;
 			result = result * 10 + (*s - '0');
