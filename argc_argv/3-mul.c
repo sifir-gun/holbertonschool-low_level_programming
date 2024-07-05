@@ -1,38 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-
 /**
- * main - adds positive numbers passed as arguments
+ * main - multiplies two numbers passed as arguments
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0 on success, 1 if any argument is not a number
+ * Return: 0 on success, 1 if the number of arguments is incorrect
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	int i, j;
+	int num1, num2, result;
 
-	if (argc == 1)
+	if (argc != 3)
 	{
-		printf("0\n");
-		return (0);
+		printf("Error\n");
+		return (1);
 	}
 
-	for (i = 1; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (!isdigit(argv[i][j]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		sum += atoi(argv[i]);
-	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
 
-	printf("%d\n", sum);
+	printf("%d\n", result);
 	return (0);
 }
