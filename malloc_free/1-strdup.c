@@ -16,16 +16,11 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	/* Calculate the length of the input string */
 	while (str[len] != '\0')
 		len++;
-
-	/* Allocate memory for the duplicated string */
 	dup = malloc((len + 1) * sizeof(char));
 	if (dup == NULL)
 		return (NULL);
-
-	/* Copy the string */
 	for (i = 0; i < len; i++)
 		dup[i] = str[i];
 	dup[len] = '\0';
