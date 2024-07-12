@@ -8,8 +8,11 @@
  */
 struct dog
 {
-	char *name;
-	float age;
-	char *owner;
+    char *name;
+    float age;
+    char *owner;
 };
+/* Prototype for the init_dog function */
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif
