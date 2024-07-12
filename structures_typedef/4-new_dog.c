@@ -19,7 +19,7 @@ char *_strcpy(char *dest, const char *src)
 	}
 	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
 
 /**
@@ -37,7 +37,7 @@ int _strlen(const char *s)
 		len++;
 	}
 
-	return len;
+	return (len);
 }
 
 /**
