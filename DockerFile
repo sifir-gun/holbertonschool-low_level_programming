@@ -1,0 +1,13 @@
+FROM arm64v8/ubuntu:jammy
+
+RUN apt-get update && apt-get install -y wget build-essential
+RUN wget https://sourceware.org/pub/valgrind/valgrind-3.20.0.tar.bz2 \
+    && tar -xjf valgrind-3.20.0.tar.bz2 \
+    && cd valgrind-3.20.0 \
+    && ./configure \
+    && make \
+    && make install \
+    && cd .. \
+    && rm -rf valgrind-3.20.0 valgrind-3.20.0.tar.bz2
+
+CMD ["/bin/bash"]
