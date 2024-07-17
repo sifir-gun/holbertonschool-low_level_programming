@@ -3,7 +3,7 @@
 
 /**
  * struct op - Struct op
- * 
+ *
  * @op: the operator
  * @f: thefunction associated
  */
