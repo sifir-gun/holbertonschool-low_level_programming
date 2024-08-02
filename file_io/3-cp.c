@@ -25,6 +25,16 @@ void error_exit_fd(int status, const char *message, int arg)
 }
 
 /**
+ * close_file - Closes a file and handles any errors.
+ * @fd: The file descriptor to close.
+ */
+void close_file(int fd)
+{
+	if (close(fd) == -1)
+		error_exit_fd(100, "Error: Can't close fd %d\n", fd);
+}
+
+/**
  * main - Copies the content of a file to another file.
  * @argc: The number of arguments.
  * @argv: The array of arguments.
@@ -46,7 +56,7 @@ int main(int argc, char *argv[])
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (file_to == -1)
 	{
-		close(file_from);
+		close_file(file_from);
 		error_exit(99, "Error: Can't write to %s\n", argv[2]);
 	}
 
@@ -55,24 +65,21 @@ int main(int argc, char *argv[])
 		wr = write(file_to, buffer, rd);
 		if (wr != rd)
 		{
-			close(file_from);
-			close(file_to);
+			close_file(file_from);
+			close_file(file_to);
 			error_exit(99, "Error: Can't write to %s\n", argv[2]);
 		}
 	}
 
 	if (rd == -1)
 	{
-		close(file_from);
-		close(file_to);
+		close_file(file_from);
+		close_file(file_to);
 		error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 	}
 
-	if (close(file_from) == -1)
-		error_exit_fd(100, "Error: Can't close fd %d\n", file_from);
-
-	if (close(file_to) == -1)
-		error_exit_fd(100, "Error: Can't close fd %d\n", file_to);
+	close_file(file_from);
+	close_file(file_to);
 
 	return (0);
 }
