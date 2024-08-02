@@ -1,6 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
 /* Prototypes of the functions */
 
 /* Function to convert a binary number to an unsigned int */
